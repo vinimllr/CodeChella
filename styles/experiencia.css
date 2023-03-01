@@ -1,0 +1,38 @@
+/* -----------------------
+    BANNER */
+
+.banner-exp {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/Banner\ -\ A\ Experiência.svg);
+    mix-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-texto {
+    display: none;
+}
+
+.rodape-exp {
+    background-color: var(--roxo-boreal);
+    padding-top: 2em;
+}
+
+@media screen and (min-width:768px) {
+    /* -------------------------------------------------------------------
+    BANNER */
+    .banner-texto {
+        display: inline;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .foto-sustentabilidade {
+        order: 2;
+    }
+    .texto-sustentabilidae {
+        order: 1;
+    }
+    
+}

@@ -1,0 +1,35 @@
+.banner-texto {
+    font-size: 32px;
+    color: var(--branco-fonte);
+    text-align: center;
+    line-height: 1.5em;
+    font-family: var(--fonte-secundaria);
+}
+
+.banner {
+    display: grid;
+    place-items: center;
+    height: 280px;
+}
+
+.banner-index {
+    background: url(../assets/Banner\ -\ Homepage.svg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media screen and (min-width: 768px) {
+    .banner-texto {
+        font-size: 64px;
+    }
+    .banner {
+        height: 384px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .banner {
+        height: 407px;
+    }
+}

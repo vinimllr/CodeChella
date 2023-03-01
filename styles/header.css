@@ -1,0 +1,152 @@
+
+.header {
+    background-color: var(--roxo-boreal);
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-hamburguer {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+
+.nav-list {
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 112px;
+    height: 0;
+    transition: .6s;
+    text-align: center;
+    right: 0;
+    background-color: var(--roxo-boreal);
+    z-index: 1000;
+    padding: 2em 0 3em 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.barra-mobile {
+    margin-top: .5em;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 2em 0;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: var(--branco-fonte);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav.active .nav-list {
+    flex-direction: column;
+    height: 40vh;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+#hamburguer {
+    width: 32px;
+    color: var(--branco-fonte);
+    border-top: 3.5px solid;
+}
+
+#hamburguer:after, #hamburguer:before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: currentColor;
+    margin-top: 7px;
+    transition: .3s;
+    position: relative;
+}
+
+.nav.active #hamburguer {
+    border-top-color: transparent;
+}
+
+.nav.active #hamburguer:after {
+    transform: rotate(135deg);
+    top: -10px;
+
+}
+.nav.active #hamburguer:before {
+    transform: rotate(-135deg);
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .nav-list {
+        display: flex;
+        visibility: visible;
+        position: initial;
+        width: 100%;
+        z-index: inherit;
+        padding: 0;
+        margin: 0;
+        width: initial;
+        height: initial;
+    }
+
+    .nav-link {
+        margin-bottom: .5em;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 2em;
+        transition: .3s;
+    }
+    .nav-item:hover {
+        transform: scale(1.1);
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+    .barra-mobile {
+        display: none;
+    }
+
+    .nav-item>.barra-animada{
+        background: var(--branco-fonte);
+        height: 2px;
+        width: 0%;
+        display: block;
+        transition: all 0.3s;
+    }
+    .nav-item:hover>.barra-animada {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-item {
+        margin: 2em 1.5em;
+    }
+}

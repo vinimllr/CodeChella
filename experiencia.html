@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <title>Code Chella | Challenge I - Front-end 2023</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html"><img class="logo" src="./assets/Logo1 1.svg" alt=""></a>
+        <nav class="nav">
+            <button class="menu-hamburguer" id="btn-mobile"><span id="hamburguer"></span></button>
+            <div class="menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./experiencia.html">A experiência</a>
+                        <span class="barra-mobile"><img src="./assets/Line 4.svg" alt=""></span>
+                        <span class="barra-animada"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mapa de Setores</a>
+                        <span class="barra-mobile"><img src="./assets/Line 4.svg" alt=""></span>
+                        <span class="barra-animada"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Informações</a>
+                        <span class="barra-mobile"><img src="./assets/Line 4.svg" alt=""></span>
+                        <span class="barra-animada"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ingresso</a>
+                        <span class="barra-mobile"><img src="./assets/Line 4.svg" alt=""></span>
+                        <span class="barra-animada"></span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner banner-exp">
+            <h2 class="banner-texto">A Experiência</h2>
+        </section>
+        <section class="informacoes-principal Acessibilidade">
+            <figure class="foto-principal">
+                <img class="img-mobile" src="./assets/foto1-exp.svg" alt="">
+                <img class="img-desktop" src="./assets/foto1-exp-tablet.svg" alt="">
+            </figure>
+            <article class="informacoes-principal__texto">
+                <h2 class="informacoes-principal__titulo">Acessibilidade e Inclusão</h2>
+                <p class="informacoes-principal__descricao">Nosso evento tenta abraçar um público mais amplo em todos os sentidos, de todas as idades, corpos, gostos e pensamentos!  Isso está presente no  espaço físico, na sinalização, no treinamento da equipe de apoio, na comunicação em libras, braile, visual e tátil. Além disso, dispomos de ingressos gratuitos para pessoas com deficiência e acompanhantes, pessoas idosas e crianças!</p>
+            </article>
+        </section>
+        <section class="informacoes-principal sustentabilidade">
+            <figure class="foto-principal foto-sustentabilidade">
+                <img class="img-mobile" src="./assets/foto2-exp.svg" alt="">
+                <img class="img-desktop" src="./assets/foto2-exp-tablet.svg" alt="">
+            </figure>
+            <article class="informacoes-principal__texto texto-sustentabilidade">
+                <h2 class="informacoes-principal__titulo">Sustentabilidade</h2>
+                <p class="informacoes-principal__descricao">Queremos estar aqui celebrando daqui a 50, 100 anos! Por isso, levamos o futuro do nosso planeta a sério. Nosso festival é carbono zero, com utilização de copos retornáveis, coleta e destinação adequada de resíduos, e transporte coletivo.</p>
+            </article>
+        </section>
+        <section class="informacoes-principal atracoes">
+            <figure class="foto-principal">
+                <img class="img-mobile" src="./assets/foto3-exp.svg" alt="">
+                <img class="img-desktop" src="./assets/foto3-exp-tablet.svg" alt="">
+            </figure>
+            <article class="informacoes-principal__texto">
+                <h2 class="informacoes-principal__titulo">Atrações</h2>
+                <p class="informacoes-principal__descricao">Intervenções artísticas e culturais para todos os gostos! Durante os intervalos dos shows, nossa experiência contará com recreação para crianças, oficina de cerâmica, origami, circo e aquarela! Além disso, nosso espaço contra com 3 praças de alimentação, roda gigante e outros brinquedos!</p>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape rodape-exp">
+        <div class="rodape-container">
+        <img class="rodape-logo" src="./assets/logo-rodape.svg" alt="">
+        <article class="contatos">
+            <h3 class="rodape-texto">Acesse nossas redes:</h3>
+            <ul class="lista-redes">
+                <li class="lista-redes__items"><a href="#" class="lista-links"><img src="./assets/whatsapp-icon.svg" alt="" class="lista-icones"></a></li>
+                <li class="lista-redes__items"><a href="#" class="lista-links"><img src="./assets/twitch-icon.svg" alt="" class="lista-icones"></a></li>
+                <li class="lista-redes__items"><a href="#" class="lista-links"><img src="./assets/insta-icon.svg" alt="" class="lista-icones"></a></li>
+                <li class="lista-redes__items"><a href="#" class="lista-links"><img src="./assets/twitter-icon.svg" alt="" class="lista-icones"></a></li>
+            </ul>
+        </article>
+        </div>
+        <div class="rodape-container">
+            <h3 class="rodape-texto">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</h3>
+        </div>
+    </footer>
+    <script src="./menu-mobile.js"></script>
+</body>
+</html>

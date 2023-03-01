@@ -1,0 +1,22 @@
+@import url(./styles/secao-informacoes.css);
+@import url(./styles/header.css);
+@import url(./styles/banner.css);
+@import url(./styles/line-up.css);
+@import url(./styles/rodape.css);
+@import url(./styles/experiencia.css);
+
+:root {
+    --roxo-boreal: #4650BD;
+    --branco-fonte: #FFFFFF;
+    --fonte-principal: 'Raleway', sans-serif;
+    --fonte-secundaria: 'Calistoga', cursive;
+    --gradiente: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+    --verde-escuro: #008364;
+}
+
+body {
+    background-image: var(--gradiente);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fonte-principal);
+}
